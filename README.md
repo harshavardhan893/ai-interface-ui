@@ -100,3 +100,13 @@ JavaScript handles:
 ## Note
 
 The AI responses in this project are frontend demo responses based on predefined JavaScript logic. This project does not currently connect to an external AI API or backend.
+## GitHub Collaboration Workflow
+
+This project was developed using the GitHub collaboration workflow:
+
+1. Created a feature branch for the AI Chat Interface.
+2. Developed the UI using HTML, CSS, and JavaScript.
+3. Committed the project changes.
+4. Pushed the feature branch to GitHub.
+5. Created a Pull Request from `feature/ai-chat-interface` to `main`.
+6. Reviewed the changes before merging.
