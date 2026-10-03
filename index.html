@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+    <h2>AI Chat</h2>
+    <button class="new-chat">+ New Chat</button>
+    <button class="theme-button">🌙 Dark Mode</button>
+     </div>
+
+            <div class="chat-history">
+                <p class="history-title">Recent Chats</p>
+
+                <button class="history-item">AI Introduction</button>
+                <button class="history-item">Python Help</button>
+                <button class="history-item">Project Ideas</button>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+
+            <header class="chat-header">
+                <h1>AI Assistant</h1>
+                <p>Your intelligent chat companion</p>
+            </header>
+
+            <section class="messages">
+
+                <div class="message assistant">
+                    <div class="avatar">AI</div>
+                    <div class="message-content">
+                        <strong>AI Assistant</strong>
+                        <p>Hello! 👋 How can I help you today?</p>
+                    </div>
+                </div>
+
+                <div class="message user">
+                    <div class="message-content">
+                        <strong>You</strong>
+                        <p>Tell me something interesting about AI.</p>
+                    </div>
+                </div>
+
+                <div class="message assistant">
+                    <div class="avatar">AI</div>
+                    <div class="message-content">
+                        <strong>AI Assistant</strong>
+                        <p>Artificial intelligence allows computers to learn from data and perform tasks that normally require human intelligence.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Suggested Prompts -->
+            <div class="suggestions">
+                <button>Explain AI</button>
+                <button>Help me code</button>
+                <button>Give me ideas</button>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <input type="text" placeholder="Message AI Assistant...">
+                <button class="send-button">Send</button>
+            </div>
+
+        </main>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
