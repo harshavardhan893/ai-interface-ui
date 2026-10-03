@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header class="header">
+            <div class="logo">AI</div>
+
+            <div>
+                <h1>AI Search</h1>
+                <p>Search smarter with natural language</p>
+            </div>
+        </header>
+
+        <main class="search-container">
+
+            <section class="search-section">
+
+                <h2>What would you like to know?</h2>
+
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Ask a question or search for anything..."
+                        autocomplete="off"
+                    >
+
+                    <button id="searchButton">Search</button>
+                </div>
+
+                <div class="quick-searches">
+
+                    <button class="quick-button">
+                        What is Artificial Intelligence?
+                    </button>
+
+                    <button class="quick-button">
+                        How does Python work?
+                    </button>
+
+                    <button class="quick-button">
+                        Give me project ideas
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section id="results" class="results">
+
+                <div class="result-placeholder">
+                    <div class="large-icon">🔎</div>
+                    <h2>AI-powered search</h2>
+                    <p>
+                        Enter a question above and AI will help you find
+                        relevant information.
+                    </p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
