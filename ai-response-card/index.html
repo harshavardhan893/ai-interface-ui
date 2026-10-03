@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Response Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>AI Response Card</h1>
+        <p class="subtitle">View an AI-generated response</p>
+
+        <div class="response-card">
+
+            <div class="card-header">
+                <h2>AI Response</h2>
+                <span class="status">Generated</span>
+            </div>
+
+            <div class="response-content">
+                <p id="responseText">
+                    Artificial Intelligence is technology that enables
+                    computers to perform tasks that normally require
+                    human intelligence.
+                </p>
+            </div>
+
+            <div class="card-actions">
+                <button onclick="copyResponse()">Copy</button>
+                <button onclick="regenerateResponse()">Regenerate</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
