@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Suggestions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI Prompt Suggestions</h1>
+
+        <p class="subtitle">
+            Choose a prompt to get started
+        </p>
+
+        <div class="suggestions">
+
+            <button class="prompt-btn"
+                onclick="selectPrompt('Explain artificial intelligence in simple words')">
+                Explain artificial intelligence
+            </button>
+
+            <button class="prompt-btn"
+                onclick="selectPrompt('Give me Python programming examples')">
+                Give me Python examples
+            </button>
+
+            <button class="prompt-btn"
+                onclick="selectPrompt('Help me create a study plan')">
+                Create a study plan
+            </button>
+
+            <button class="prompt-btn"
+                onclick="selectPrompt('Summarize this topic for me')">
+                Summarize a topic
+            </button>
+
+            <button class="prompt-btn"
+                onclick="selectPrompt('Explain this concept step by step')">
+                Explain step by step
+            </button>
+
+            <button class="prompt-btn"
+                onclick="selectPrompt('Give me project ideas')">
+                Give me project ideas
+            </button>
+
+        </div>
+
+        <div id="selectedPrompt" class="selected-prompt">
+            <h2>Selected Prompt</h2>
+            <p>Click any suggestion above.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
