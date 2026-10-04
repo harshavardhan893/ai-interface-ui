@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Command Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div class="logo">AI</div>
+            <div>
+                <h1>AI Command Bar</h1>
+                <p>Quickly ask AI to perform a task</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+
+            <div class="command-box">
+                <span class="command-icon">⌘</span>
+
+                <input
+                    type="text"
+                    id="commandInput"
+                    placeholder="Ask AI anything..."
+                    autocomplete="off"
+                >
+
+                <span class="shortcut">Ctrl K</span>
+
+                <button id="runButton">Run</button>
+            </div>
+
+            <div class="suggestions">
+
+                <button class="suggestion">
+                    Explain artificial intelligence
+                </button>
+
+                <button class="suggestion">
+                    Help me write code
+                </button>
+
+                <button class="suggestion">
+                    Give me project ideas
+                </button>
+
+                <button class="suggestion">
+                    Summarize information
+                </button>
+
+            </div>
+
+            <div id="responseBox" class="response-box">
+                <h2>AI Response</h2>
+                <p>Enter a command above to get a response.</p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

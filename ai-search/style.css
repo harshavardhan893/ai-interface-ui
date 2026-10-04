@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.page {
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 40px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111827;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+}
+
+.search-container {
+    max-width: 900px;
+    margin: 70px auto;
+    padding: 20px;
+}
+
+.search-section {
+    text-align: center;
+}
+
+.search-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.search-icon {
+    font-size: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 12px;
+    font-size: 16px;
+}
+
+#searchButton {
+    padding: 12px 20px;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background: #374151;
+}
+
+.quick-searches {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.quick-button {
+    padding: 10px 15px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.quick-button:hover {
+    background: #f3f4f6;
+}
+
+.results {
+    margin-top: 45px;
+}
+
+.result-placeholder {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.large-icon {
+    font-size: 45px;
+}
+
+.result-placeholder h2 {
+    margin-bottom: 8px;
+}
+
+.result-placeholder p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .search-container {
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    .search-section h2 {
+        font-size: 23px;
+    }
+
+    .search-box {
+        flex-wrap: wrap;
+    }
+
+    .search-box input {
+        min-width: 180px;
+    }
+
+    #searchButton {
+        width: 100%;
+    }
+}

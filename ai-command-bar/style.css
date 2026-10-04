@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #1f2937;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 40px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111827;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+}
+
+.main-content {
+    max-width: 850px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.command-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    padding: 10px 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.command-icon {
+    font-size: 22px;
+    color: #6b7280;
+}
+
+.command-box input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.shortcut {
+    padding: 6px 10px;
+    background: #f3f4f6;
+    border-radius: 6px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+#runButton {
+    padding: 11px 18px;
+    background: #111827;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#runButton:hover {
+    background: #374151;
+}
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.suggestion {
+    padding: 10px 15px;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.suggestion:hover {
+    background: #f3f4f6;
+}
+
+.response-box {
+    margin-top: 30px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.response-box h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.response-box p {
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .main-content {
+        margin: 40px auto;
+        padding: 15px;
+    }
+
+    .command-box {
+        flex-wrap: wrap;
+    }
+
+    .command-box input {
+        min-width: 180px;
+    }
+
+    .shortcut {
+        display: none;
+    }
+
+    #runButton {
+        width: 100%;
+    }
+
+    .suggestions {
+        justify-content: center;
+    }
+}

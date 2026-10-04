@@ -3,82 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Chat Interface</title>
+    <title>AI Interface Collection</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="app">
+    <div class="dashboard">
 
         <!-- Sidebar -->
         <aside class="sidebar">
+
             <div class="sidebar-header">
-    <h2>AI Chat</h2>
-    <button class="new-chat">+ New Chat</button>
-    <button class="theme-button">🌙 Dark Mode</button>
-     </div>
-
-            <div class="chat-history">
-                <p class="history-title">Recent Chats</p>
-
-                <button class="history-item">AI Introduction</button>
-                <button class="history-item">Python Help</button>
-                <button class="history-item">Project Ideas</button>
+                <h2>AI Interface</h2>
+                <p>Member 1 Collection</p>
             </div>
+
+            <nav class="navigation">
+                <button onclick="showSection('chat-section')">
+                    🤖 AI Assistant
+                </button>
+
+                <button onclick="showSection('command-section')">
+                    ⌘ AI Command Bar
+                </button>
+
+                <button onclick="showSection('search-section')">
+                    🔍 AI Search
+                </button>
+            </nav>
+
+            <button class="theme-button">
+                🌙 Dark Mode
+            </button>
+
         </aside>
 
-        <!-- Main Chat Area -->
-        <main class="chat-area">
 
-            <header class="chat-header">
-                <h1>AI Assistant</h1>
-                <p>Your intelligent chat companion</p>
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="page-header">
+                <h1>AI Interface Collection</h1>
+                <p>
+                    A collection of AI interface patterns developed for the UI Template Collection Hackathon.
+                </p>
             </header>
 
-            <section class="messages">
 
-                <div class="message assistant">
-                    <div class="avatar">AI</div>
-                    <div class="message-content">
-                        <strong>AI Assistant</strong>
-                        <p>Hello! 👋 How can I help you today?</p>
+            <!-- ========================= -->
+            <!-- AI CHAT / AI ASSISTANT -->
+            <!-- ========================= -->
+
+            <section id="chat-section" class="interface-section">
+
+                <div class="section-title">
+                    <span class="section-icon">🤖</span>
+
+                    <div>
+                        <h2>AI Assistant / AI Chat</h2>
+                        <p>Interactive AI conversation interface with sidebar.</p>
                     </div>
                 </div>
 
-                <div class="message user">
-                    <div class="message-content">
-                        <strong>You</strong>
-                        <p>Tell me something interesting about AI.</p>
-                    </div>
-                </div>
 
-                <div class="message assistant">
-                    <div class="avatar">AI</div>
-                    <div class="message-content">
-                        <strong>AI Assistant</strong>
-                        <p>Artificial intelligence allows computers to learn from data and perform tasks that normally require human intelligence.</p>
+                <div class="chat-container">
+
+                    <!-- Chat Sidebar -->
+
+                    <aside class="chat-sidebar">
+
+                        <h3>AI Chat</h3>
+
+                        <button class="new-chat">
+                            + New Chat
+                        </button>
+
+                        <p class="history-title">
+                            Recent Chats
+                        </p>
+
+                        <button class="history-item">
+                            AI Introduction
+                        </button>
+
+                        <button class="history-item">
+                            Python Help
+                        </button>
+
+                        <button class="history-item">
+                            Project Ideas
+                        </button>
+
+                    </aside>
+
+
+                    <!-- Chat Area -->
+
+                    <div class="chat-area">
+
+                        <div class="messages">
+
+                            <div class="message assistant">
+
+                                <div class="avatar">
+                                    AI
+                                </div>
+
+                                <div class="message-content">
+                                    <strong>AI Assistant</strong>
+
+                                    <p>
+                                        Hello! 👋 How can I help you today?
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="message user">
+
+                                <div class="message-content">
+                                    <strong>You</strong>
+
+                                    <p>
+                                        Tell me something interesting about AI.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="message assistant">
+
+                                <div class="avatar">
+                                    AI
+                                </div>
+
+                                <div class="message-content">
+
+                                    <strong>AI Assistant</strong>
+
+                                    <p>
+                                        Artificial intelligence allows computers
+                                        to learn from data and perform tasks that
+                                        normally require human intelligence.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Chat Suggestions -->
+
+                        <div class="suggestions">
+
+                            <button>
+                                Explain AI
+                            </button>
+
+                            <button>
+                                Help me code
+                            </button>
+
+                            <button>
+                                Give me ideas
+                            </button>
+
+                        </div>
+
+
+                        <!-- Chat Input -->
+
+                        <div class="input-area">
+
+                            <input
+                                type="text"
+                                placeholder="Message AI Assistant..."
+                            >
+
+                            <button class="send-button">
+                                Send
+                            </button>
+
+                        </div>
+
                     </div>
+
                 </div>
 
             </section>
 
-            <!-- Suggested Prompts -->
-            <div class="suggestions">
-                <button>Explain AI</button>
-                <button>Help me code</button>
-                <button>Give me ideas</button>
-            </div>
 
-            <!-- Input Area -->
-            <div class="input-area">
-                <input type="text" placeholder="Message AI Assistant...">
-                <button class="send-button">Send</button>
-            </div>
+            <!-- ========================= -->
+            <!-- AI COMMAND BAR -->
+            <!-- ========================= -->
+
+            <section id="command-section" class="interface-section">
+
+                <div class="section-title">
+
+                    <span class="section-icon">
+                        ⌘
+                    </span>
+
+                    <div>
+
+                        <h2>AI Command Bar</h2>
+
+                        <p>
+                            Quickly ask AI to perform a task.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="command-box">
+
+                    <span class="command-icon">
+                        ⌘
+                    </span>
+
+                    <input
+                        type="text"
+                        id="commandInput"
+                        placeholder="Ask AI anything..."
+                        autocomplete="off"
+                    >
+
+                    <span class="shortcut">
+                        Ctrl K
+                    </span>
+
+                    <button id="runButton">
+                        Run
+                    </button>
+
+                </div>
+
+
+                <div class="command-suggestions">
+
+                    <button class="command-suggestion">
+                        Explain artificial intelligence
+                    </button>
+
+                    <button class="command-suggestion">
+                        Help me write code
+                    </button>
+
+                    <button class="command-suggestion">
+                        Give me project ideas
+                    </button>
+
+                    <button class="command-suggestion">
+                        Summarize information
+                    </button>
+
+                </div>
+
+
+                <div id="responseBox" class="response-box">
+
+                    <h3>
+                        AI Response
+                    </h3>
+
+                    <p>
+                        Enter a command above to get a response.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- ========================= -->
+            <!-- AI SEARCH -->
+            <!-- ========================= -->
+
+            <section id="search-section" class="interface-section">
+
+                <div class="section-title">
+
+                    <span class="section-icon">
+                        🔍
+                    </span>
+
+                    <div>
+
+                        <h2>AI Search</h2>
+
+                        <p>
+                            Search smarter using natural language.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <span class="search-icon">
+                        🔍
+                    </span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Ask a question or search for anything..."
+                        autocomplete="off"
+                    >
+
+                    <button id="searchButton">
+                        Search
+                    </button>
+
+                </div>
+
+
+                <div class="quick-searches">
+
+                    <button class="quick-button">
+                        What is Artificial Intelligence?
+                    </button>
+
+                    <button class="quick-button">
+                        How does Python work?
+                    </button>
+
+                    <button class="quick-button">
+                        Give me project ideas
+                    </button>
+
+                </div>
+
+
+                <div id="results" class="results">
+
+                    <div class="result-placeholder">
+
+                        <div class="large-icon">
+                            🔎
+                        </div>
+
+                        <h3>
+                            AI-powered search
+                        </h3>
+
+                        <p>
+                            Enter a question above and AI will help you
+                            find relevant information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
 
         </main>
 
     </div>
-<script src="script.js"></script>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
