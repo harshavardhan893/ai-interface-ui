@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 1050px;
+    margin: 50px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.ai-label {
+    color: #7c3aed;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 34px;
+    margin: 8px 0;
+}
+
+.header p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: #ecfdf5;
+    color: #059669;
+    padding: 9px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status span {
+    width: 7px;
+    height: 7px;
+    background: #10b981;
+    border-radius: 50%;
+}
+
+
+/* EDITOR */
+
+.editor-card {
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.toolbar {
+    padding: 17px 20px;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.document-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.document-icon {
+    width: 38px;
+    height: 38px;
+    background: #f3f0ff;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.document-info strong {
+    display: block;
+    font-size: 13px;
+}
+
+.document-info small {
+    display: block;
+    color: #9ca3af;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.toolbar-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.toolbar-actions button {
+    border: 1px solid #e5e7eb;
+    background: white;
+    padding: 9px 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.toolbar-actions button:last-child {
+    background: #7c3aed;
+    color: white;
+    border-color: #7c3aed;
+}
+
+.toolbar-actions button:hover {
+    opacity: 0.85;
+}
+
+
+/* TEXT EDITOR */
+
+.editor {
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    min-height: 310px;
+    resize: vertical;
+    border: none;
+    outline: none;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #374151;
+}
+
+textarea::placeholder {
+    color: #b0b5bd;
+}
+
+
+/* AI SUGGESTIONS */
+
+.suggestion-box {
+    width: calc(100% - 60px);
+    margin: 0 30px 25px;
+    border: 1px solid #ddd6fe;
+    border-radius: 13px;
+    background: #faf9ff;
+    overflow: hidden;
+}
+
+.suggestion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    background: #f5f3ff;
+    border-bottom: 1px solid #ddd6fe;
+}
+
+.suggestion-header span {
+    color: #7c3aed;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.suggestion-header small {
+    color: #9ca3af;
+    font-size: 10px;
+}
+
+.suggestion {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ede9fe;
+    background: transparent;
+    padding: 14px 15px;
+    cursor: pointer;
+    color: #4b5563;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.suggestion:last-child {
+    border-bottom: none;
+}
+
+.suggestion:hover {
+    background: #f3f0ff;
+}
+
+.suggestion-icon {
+    color: #7c3aed;
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+.editor-footer {
+    border-top: 1px solid #e5e7eb;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: #9ca3af;
+    font-size: 11px;
+}
+
+
+/* FEATURES */
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: white;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.feature-card h3 {
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.feature-card p {
+    color: #6b7280;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+#message {
+    text-align: center;
+    color: #16a34a;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 18px;
+    min-height: 20px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .toolbar {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .toolbar-actions {
+        width: 100%;
+    }
+
+    .toolbar-actions button {
+        flex: 1;
+    }
+
+    textarea {
+        min-height: 260px;
+        padding: 20px;
+    }
+
+    .suggestion-box {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

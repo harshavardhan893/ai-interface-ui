@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Insight Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="dashboard">
+
+        <header class="top-bar">
+            <div>
+                <span class="ai-label">✦ AI ANALYTICS</span>
+                <h1>AI Insights</h1>
+                <p>Smart insights generated from your recent data.</p>
+            </div>
+
+            <button class="refresh-btn" onclick="refreshInsight()">
+                ↻ Refresh Insights
+            </button>
+        </header>
+
+
+        <section class="insight-card">
+
+            <div class="card-header">
+
+                <div class="title-area">
+                    <div class="ai-icon">
+                        ✦
+                    </div>
+
+                    <div>
+                        <h2>Revenue Growth Opportunity</h2>
+                        <p>AI-generated insight</p>
+                    </div>
+                </div>
+
+                <span class="status">
+                    ● High Impact
+                </span>
+
+            </div>
+
+
+            <div class="insight-content">
+
+                <div class="main-insight">
+
+                    <div class="insight-heading">
+                        <span>💡</span>
+                        <h3>What the AI found</h3>
+                    </div>
+
+                    <p class="insight-text">
+                        Your monthly revenue increased by
+                        <strong>18.6%</strong> compared with the previous
+                        month. The strongest growth came from returning
+                        customers and premium subscriptions.
+                    </p>
+
+                    <div class="highlight">
+                        <span class="highlight-icon">↗</span>
+
+                        <div>
+                            <strong>18.6% Revenue Growth</strong>
+                            <p>
+                                Higher than the previous month's
+                                11.2% growth.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="metrics">
+
+                    <div class="metric">
+                        <span>Current Revenue</span>
+                        <strong>$84,620</strong>
+                        <small class="positive">+18.6%</small>
+                    </div>
+
+                    <div class="metric">
+                        <span>Returning Customers</span>
+                        <strong>3,842</strong>
+                        <small class="positive">+12.4%</small>
+                    </div>
+
+                    <div class="metric">
+                        <span>Premium Users</span>
+                        <strong>1,284</strong>
+                        <small class="positive">+21.7%</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="confidence-section">
+
+                <div class="confidence-header">
+                    <span>AI Confidence</span>
+                    <strong id="confidenceValue">94%</strong>
+                </div>
+
+                <div class="progress-bar">
+                    <div
+                        class="progress"
+                        id="confidenceBar">
+                    </div>
+                </div>
+
+                <p>
+                    Based on 24,830 data points analyzed by the AI model.
+                </p>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <div class="recommendation-icon">
+                    ✓
+                </div>
+
+                <div class="recommendation-text">
+                    <span>AI Recommendation</span>
+
+                    <p>
+                        Consider increasing premium subscription promotions
+                        because this segment is currently showing the
+                        strongest growth.
+                    </p>
+                </div>
+
+                <button
+                    class="action-btn"
+                    onclick="takeAction()">
+                    Take Action
+                </button>
+
+            </div>
+
+
+            <div
+                class="message"
+                id="message">
+            </div>
+
+        </section>
+
+
+        <section class="bottom-grid">
+
+            <div class="small-card">
+                <span>📊</span>
+                <div>
+                    <small>Insights Generated</small>
+                    <strong>128</strong>
+                </div>
+            </div>
+
+            <div class="small-card">
+                <span>🎯</span>
+                <div>
+                    <small>High Impact Insights</small>
+                    <strong>34</strong>
+                </div>
+            </div>
+
+            <div class="small-card">
+                <span>⚡</span>
+                <div>
+                    <small>Avg. AI Confidence</small>
+                    <strong>91%</strong>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

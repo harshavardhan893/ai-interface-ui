@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Copilot</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+                <div>
+                    <h2>AI Copilot</h2>
+                    <span>Smart Workspace</span>
+                </div>
+            </div>
+
+            <button class="new-chat" onclick="newChat()">
+                + New Conversation
+            </button>
+
+            <div class="sidebar-section">
+                <p>RECENT</p>
+
+                <button class="history active">
+                    <span>💬</span>
+                    Marketing strategy
+                </button>
+
+                <button class="history">
+                    <span>📊</span>
+                    Sales report analysis
+                </button>
+
+                <button class="history">
+                    <span>📝</span>
+                    Product description
+                </button>
+
+                <button class="history">
+                    <span>💡</span>
+                    Business ideas
+                </button>
+            </div>
+
+            <div class="sidebar-bottom">
+
+                <button class="sidebar-link">
+                    ⚙ Settings
+                </button>
+
+                <button class="sidebar-link">
+                    ? Help & Support
+                </button>
+
+            </div>
+
+        </aside>
+
+
+        <main class="chat-area">
+
+            <header class="chat-header">
+
+                <div class="copilot-title">
+
+                    <div class="online-icon">
+                        ✦
+                    </div>
+
+                    <div>
+                        <h1>AI Copilot</h1>
+                        <span>
+                            <i></i>
+                            Online and ready to help
+                        </span>
+                    </div>
+
+                </div>
+
+                <button class="more-btn">
+                    ⋮
+                </button>
+
+            </header>
+
+
+            <section class="messages" id="messages">
+
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+                        ✦
+                    </div>
+
+                    <h2>How can I help you today?</h2>
+
+                    <p>
+                        Ask me anything, analyze your data, create content,
+                        or brainstorm new ideas.
+                    </p>
+
+                </div>
+
+
+                <div class="suggestions">
+
+                    <button onclick="useSuggestion('Create a marketing strategy')">
+                        <span>📈</span>
+                        <div>
+                            <strong>Marketing strategy</strong>
+                            <small>Create a strategy for my product</small>
+                        </div>
+                    </button>
+
+                    <button onclick="useSuggestion('Analyze my sales data')">
+                        <span>📊</span>
+                        <div>
+                            <strong>Analyze data</strong>
+                            <small>Find important trends in my data</small>
+                        </div>
+                    </button>
+
+                    <button onclick="useSuggestion('Write a professional email')">
+                        <span>✉️</span>
+                        <div>
+                            <strong>Write content</strong>
+                            <small>Create professional content</small>
+                        </div>
+                    </button>
+
+                    <button onclick="useSuggestion('Give me some business ideas')">
+                        <span>💡</span>
+                        <div>
+                            <strong>Brainstorm ideas</strong>
+                            <small>Generate creative ideas</small>
+                        </div>
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <div class="typing" id="typing">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <div class="input-box">
+
+                    <button class="tool-btn" title="Attach file">
+                        📎
+                    </button>
+
+                    <textarea
+                        id="messageInput"
+                        placeholder="Message your AI Copilot..."
+                        rows="1"
+                        onkeydown="handleKey(event)">
+                    </textarea>
+
+                    <button
+                        class="voice-btn"
+                        title="Voice input">
+                        🎤
+                    </button>
+
+                    <button
+                        class="send-btn"
+                        onclick="sendMessage()">
+                        ↑
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    AI Copilot can make mistakes. Check important information.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
