@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Content Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+
+            <div>
+                <span class="ai-label">✦ AI CONTENT STUDIO</span>
+
+                <h1>AI Content Generator</h1>
+
+                <p>
+                    Turn your ideas into polished content with AI.
+                </p>
+            </div>
+
+            <div class="ai-status">
+                <span></span>
+                AI Ready
+            </div>
+
+        </header>
+
+
+        <section class="workspace">
+
+            <div class="input-panel">
+
+                <div class="panel-header">
+                    <div>
+                        <h2>Create Content</h2>
+                        <p>Tell AI what you want to create.</p>
+                    </div>
+
+                    <span class="step">01</span>
+                </div>
+
+
+                <label>Content Type</label>
+
+                <div class="content-types">
+
+                    <button
+                        class="type-btn active"
+                        onclick="selectType(this, 'Blog Post')">
+                        📝
+                        <span>Blog Post</span>
+                    </button>
+
+                    <button
+                        class="type-btn"
+                        onclick="selectType(this, 'Social Media')">
+                        📱
+                        <span>Social Media</span>
+                    </button>
+
+                    <button
+                        class="type-btn"
+                        onclick="selectType(this, 'Email')">
+                        ✉️
+                        <span>Email</span>
+                    </button>
+
+                    <button
+                        class="type-btn"
+                        onclick="selectType(this, 'Product Description')">
+                        🛍️
+                        <span>Product</span>
+                    </button>
+
+                </div>
+
+
+                <label for="topic">What should AI write about?</label>
+
+                <textarea
+                    id="topic"
+                    placeholder="Example: Write about how AI is changing education..."
+                    oninput="updateCharacters()"></textarea>
+
+                <div class="character-count">
+                    <span id="characters">0</span>/500
+                </div>
+
+
+                <div class="options">
+
+                    <div class="option">
+
+                        <label for="tone">
+                            Tone
+                        </label>
+
+                        <select id="tone">
+                            <option>Professional</option>
+                            <option>Friendly</option>
+                            <option>Creative</option>
+                            <option>Casual</option>
+                            <option>Persuasive</option>
+                        </select>
+
+                    </div>
+
+
+                    <div class="option">
+
+                        <label for="length">
+                            Length
+                        </label>
+
+                        <select id="length">
+                            <option>Short</option>
+                            <option>Medium</option>
+                            <option>Long</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="generate-btn"
+                    onclick="generateContent()">
+
+                    ✦ Generate Content
+
+                </button>
+
+            </div>
+
+
+            <div class="output-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Generated Content</h2>
+                        <p>AI-generated result will appear here.</p>
+                    </div>
+
+                    <span class="step">02</span>
+
+                </div>
+
+
+                <div
+                    class="output"
+                    id="output">
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            ✦
+                        </div>
+
+                        <h3>Your content will appear here</h3>
+
+                        <p>
+                            Enter a topic and click
+                            <strong>Generate Content</strong>
+                            to get started.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="output-actions"
+                    id="outputActions">
+
+                    <button onclick="copyContent()">
+                        📋 Copy
+                    </button>
+
+                    <button onclick="generateContent()">
+                        ↻ Regenerate
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="tips">
+
+            <div class="tip">
+                <span>💡</span>
+                <div>
+                    <strong>Be specific</strong>
+                    <p>
+                        Give AI enough context for better results.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <span>🎯</span>
+                <div>
+                    <strong>Choose your tone</strong>
+                    <p>
+                        Match your content to your audience.
+                    </p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <span>✨</span>
+                <div>
+                    <strong>Improve with AI</strong>
+                    <p>
+                        Regenerate until you get the perfect result.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div id="message"></div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

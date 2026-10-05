@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Autocomplete</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="header">
+            <div>
+                <span class="ai-label">✦ AI WRITING ASSISTANT</span>
+                <h1>AI Autocomplete</h1>
+                <p>Write faster with intelligent suggestions.</p>
+            </div>
+
+            <div class="status">
+                <span></span>
+                AI Ready
+            </div>
+        </header>
+
+
+        <section class="editor-card">
+
+            <div class="toolbar">
+
+                <div class="document-info">
+                    <span class="document-icon">📄</span>
+                    <div>
+                        <strong>Project Introduction</strong>
+                        <small>Draft document</small>
+                    </div>
+                </div>
+
+                <div class="toolbar-actions">
+                    <button onclick="clearEditor()">Clear</button>
+                    <button onclick="generateSuggestion()">✨ Suggest</button>
+                </div>
+
+            </div>
+
+
+            <div class="editor">
+
+                <textarea
+                    id="editor"
+                    placeholder="Start writing something..."
+                    oninput="showSuggestions()"
+                    onkeydown="handleKey(event)"></textarea>
+
+                <div class="suggestion-box" id="suggestionBox">
+
+                    <div class="suggestion-header">
+                        <span>✦ AI Suggestions</span>
+                        <small>Press Tab to accept</small>
+                    </div>
+
+                    <button
+                        class="suggestion"
+                        onclick="acceptSuggestion(0)">
+                        <span class="suggestion-icon">↳</span>
+                        <span>
+                            Our project aims to create a simple and
+                            effective solution for modern users.
+                        </span>
+                    </button>
+
+                    <button
+                        class="suggestion"
+                        onclick="acceptSuggestion(1)">
+                        <span class="suggestion-icon">↳</span>
+                        <span>
+                            Our project focuses on improving productivity
+                            through intelligent technology.
+                        </span>
+                    </button>
+
+                    <button
+                        class="suggestion"
+                        onclick="acceptSuggestion(2)">
+                        <span class="suggestion-icon">↳</span>
+                        <span>
+                            Our project combines innovative ideas with
+                            a clean and user-friendly experience.
+                        </span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="editor-footer">
+
+                <span id="wordCount">
+                    0 words
+                </span>
+
+                <span>
+                    AI suggestions enabled
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <section class="features">
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Write Faster</h3>
+                <p>
+                    Get instant AI-generated completions while you type.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Context Aware</h3>
+                <p>
+                    Suggestions adapt to the content you are writing.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Smart Suggestions</h3>
+                <p>
+                    Choose from multiple suggestions to continue your idea.
+                </p>
+            </div>
+
+        </section>
+
+
+        <div id="message"></div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

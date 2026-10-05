@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Recommendation Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div>
+                <p class="tag">✨ AI POWERED</p>
+                <h1>Recommended for You</h1>
+                <p class="subtitle">
+                    Personalized recommendations based on your interests.
+                </p>
+            </div>
+
+            <button class="refresh-btn" onclick="refreshRecommendations()">
+                ↻ Refresh
+            </button>
+        </header>
+
+        <div id="recommendationContainer" class="recommendation-grid">
+
+            <div class="card">
+                <div class="product-image">🎧</div>
+
+                <div class="card-content">
+                    <span class="category">Audio</span>
+                    <h2>Wireless Headphones</h2>
+
+                    <div class="rating">
+                        ⭐ 4.8
+                        <span>(324 reviews)</span>
+                    </div>
+
+                    <p class="description">
+                        Premium wireless headphones with noise cancellation
+                        and long battery life.
+                    </p>
+
+                    <div class="ai-reason">
+                        <strong>🤖 Why AI recommends this</strong>
+                        <p>
+                            You frequently explore audio products and this
+                            matches your recent interests.
+                        </p>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span class="price">$129</span>
+                        <button onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="product-image">⌚</div>
+
+                <div class="card-content">
+                    <span class="category">Technology</span>
+                    <h2>Smart Watch</h2>
+
+                    <div class="rating">
+                        ⭐ 4.7
+                        <span>(218 reviews)</span>
+                    </div>
+
+                    <p class="description">
+                        Track fitness, notifications and daily activities
+                        with a modern smart watch.
+                    </p>
+
+                    <div class="ai-reason">
+                        <strong>🤖 Why AI recommends this</strong>
+                        <p>
+                            This product complements your interest in
+                            fitness and smart technology.
+                        </p>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span class="price">$199</span>
+                        <button onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="product-image">💻</div>
+
+                <div class="card-content">
+                    <span class="category">Computers</span>
+                    <h2>Ultrabook Laptop</h2>
+
+                    <div class="rating">
+                        ⭐ 4.9
+                        <span>(451 reviews)</span>
+                    </div>
+
+                    <p class="description">
+                        Lightweight performance laptop designed for work,
+                        study and creative tasks.
+                    </p>
+
+                    <div class="ai-reason">
+                        <strong>🤖 Why AI recommends this</strong>
+                        <p>
+                            Based on your interest in productivity and
+                            technology, this could be a great match.
+                        </p>
+                    </div>
+
+                    <div class="card-bottom">
+                        <span class="price">$899</span>
+                        <button onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="message"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
